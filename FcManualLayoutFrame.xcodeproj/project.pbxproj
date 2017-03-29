@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E0CCE3EF1E8BCBDD006F149D /* FcManualLayoutFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CCE3ED1E8BCBDD006F149D /* FcManualLayoutFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0CCE3F61E8BCF99006F149D /* FcManualLayoutFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCE3F51E8BCF98006F149D /* FcManualLayoutFrame.swift */; };
+		E0CCE3FE1E8BD099006F149D /* FcManualLayoutFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCE3FD1E8BD099006F149D /* FcManualLayoutFrameTests.swift */; };
+		E0CCE4001E8BD099006F149D /* FcManualLayoutFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CCE3EA1E8BCBDD006F149D /* FcManualLayoutFrame.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0CCE4011E8BD099006F149D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0CCE3E11E8BCBDD006F149D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0CCE3E91E8BCBDD006F149D;
+			remoteInfo = FcManualLayoutFrame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E0CCE3EA1E8BCBDD006F149D /* FcManualLayoutFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FcManualLayoutFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CCE3ED1E8BCBDD006F149D /* FcManualLayoutFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FcManualLayoutFrame.h; sourceTree = "<group>"; };
 		E0CCE3EE1E8BCBDD006F149D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CCE3F51E8BCF98006F149D /* FcManualLayoutFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FcManualLayoutFrame.swift; sourceTree = "<group>"; };
+		E0CCE3FB1E8BD098006F149D /* FcManualLayoutFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FcManualLayoutFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CCE3FD1E8BD099006F149D /* FcManualLayoutFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FcManualLayoutFrameTests.swift; sourceTree = "<group>"; };
+		E0CCE3FF1E8BD099006F149D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0CCE3F81E8BD098006F149D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0CCE4001E8BD099006F149D /* FcManualLayoutFrame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCE3EC1E8BCBDD006F149D /* FcManualLayoutFrame */,
+				E0CCE3FC1E8BD099006F149D /* FcManualLayoutFrameTests */,
 				E0CCE3EB1E8BCBDD006F149D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCE3EA1E8BCBDD006F149D /* FcManualLayoutFrame.framework */,
+				E0CCE3FB1E8BD098006F149D /* FcManualLayoutFrameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				E0CCE3ED1E8BCBDD006F149D /* FcManualLayoutFrame.h */,
 				E0CCE3EE1E8BCBDD006F149D /* Info.plist */,
+				E0CCE3F51E8BCF98006F149D /* FcManualLayoutFrame.swift */,
 			);
 			path = FcManualLayoutFrame;
+			sourceTree = "<group>";
+		};
+		E0CCE3FC1E8BD099006F149D /* FcManualLayoutFrameTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCE3FD1E8BD099006F149D /* FcManualLayoutFrameTests.swift */,
+				E0CCE3FF1E8BD099006F149D /* Info.plist */,
+			);
+			path = FcManualLayoutFrameTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,41 @@
 			productReference = E0CCE3EA1E8BCBDD006F149D /* FcManualLayoutFrame.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E0CCE3FA1E8BD098006F149D /* FcManualLayoutFrameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0CCE4031E8BD099006F149D /* Build configuration list for PBXNativeTarget "FcManualLayoutFrameTests" */;
+			buildPhases = (
+				E0CCE3F71E8BD098006F149D /* Sources */,
+				E0CCE3F81E8BD098006F149D /* Frameworks */,
+				E0CCE3F91E8BD098006F149D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0CCE4021E8BD099006F149D /* PBXTargetDependency */,
+			);
+			name = FcManualLayoutFrameTests;
+			productName = FcManualLayoutFrameTests;
+			productReference = E0CCE3FB1E8BD098006F149D /* FcManualLayoutFrameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E0CCE3E11E8BCBDD006F149D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = mocadev;
 				TargetAttributes = {
 					E0CCE3E91E8BCBDD006F149D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H62W2JL4RH;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					E0CCE3FA1E8BD098006F149D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = H62W2JL4RH;
 						ProvisioningStyle = Automatic;
@@ -113,12 +175,20 @@
 			projectRoot = "";
 			targets = (
 				E0CCE3E91E8BCBDD006F149D /* FcManualLayoutFrame */,
+				E0CCE3FA1E8BD098006F149D /* FcManualLayoutFrameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E0CCE3E81E8BCBDD006F149D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0CCE3F91E8BD098006F149D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,10 +202,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0CCE3F61E8BCF99006F149D /* FcManualLayoutFrame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0CCE3F71E8BD098006F149D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0CCE3FE1E8BD099006F149D /* FcManualLayoutFrameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0CCE4021E8BD099006F149D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0CCE3E91E8BCBDD006F149D /* FcManualLayoutFrame */;
+			targetProxy = E0CCE4011E8BD099006F149D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E0CCE3F01E8BCBDD006F149D /* Debug */ = {
@@ -240,6 +327,28 @@
 		E0CCE3F31E8BCBDD006F149D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H62W2JL4RH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FcManualLayoutFrame/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mocadev.FcManualLayoutFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0CCE3F41E8BCBDD006F149D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H62W2JL4RH;
@@ -254,23 +363,28 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		E0CCE3F41E8BCBDD006F149D /* Release */ = {
+		E0CCE4041E8BD099006F149D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H62W2JL4RH;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FcManualLayoutFrame/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = FcManualLayoutFrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mocadev.FcManualLayoutFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mocadev.FcManualLayoutFrameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0CCE4051E8BD099006F149D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = H62W2JL4RH;
+				INFOPLIST_FILE = FcManualLayoutFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mocadev.FcManualLayoutFrameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -292,6 +406,14 @@
 			buildConfigurations = (
 				E0CCE3F31E8BCBDD006F149D /* Debug */,
 				E0CCE3F41E8BCBDD006F149D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0CCE4031E8BD099006F149D /* Build configuration list for PBXNativeTarget "FcManualLayoutFrameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0CCE4041E8BD099006F149D /* Debug */,
+				E0CCE4051E8BD099006F149D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
